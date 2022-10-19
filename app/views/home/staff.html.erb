@@ -1,52 +1,14 @@
 <H2 align="left">Сотрудники</H2>
 <div class="container">
-    <div class="row align-items-start">
-        <div class="col">
-            <div class="fl">
-              <%= image_tag "left_column/1.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Семёнова Виктория</h4>
-                    <h5>Экскурсовод</h5>
-                </div>
-
-            </div>
-            <div class="fl">
-              <%= image_tag "left_column/3.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Сидельников Павел</h4>
-                    <h5>Водитель</h5>
-                </div>
-            </div>
-            <div class="fl">
-              <%= image_tag "left_column/5.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Фандеева Маргарита</h4>
-                    <h5>Экскурсовод</h5>
-                </div>
-            </div>
+  <div class="row">
+    <% @staff.each do |staff_member| %>
+      <div class="col-6">
+        <%= image_tag staff_member.image, align: "left", class: "mb-3" %>
+        <div class="fl_cl">
+          <h4><%= staff_member.name %></h4>
+          <h5><%= staff_member.profession %></h5>
         </div>
-        <div class="col">
-            <div class="fl">
-              <%= image_tag "left_column/2.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Тарарыв Лариса</h4>
-                    <h5>Экскурсовод</h5>
-                </div>
-            </div>
-            <div class="fl">
-              <%= image_tag "left_column/4.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Плосковитов Павел</h4>
-                    <h5>Экскурсовод</h5>
-                </div>
-            </div>
-            <div class="fl">
-              <%= image_tag "left_column/6.jpg",align:"left", class:"mb-3" %>
-                <div class="fl_cl">
-                    <h4>Чёрная Анна</h4>
-                    <h5>Гид</h5>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
+    <% end %>
+  </div>
 </div>

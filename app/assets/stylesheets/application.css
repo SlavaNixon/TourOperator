@@ -13,29 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.fl-r {
-    float: right;
-    color: red;
-}
-.videl-red {
-    color: darkred;
-    text-decoration: underline;
-}
-
-.videl-blue {
-    color: blue;
-    text-decoration: underline;
-}
-
-.fl {
-    display: flex;
-}
-.fl_cl {
-    display: flex;
-    flex-direction: column;
-}
-
-.back{
-    background-color: #f8f8f8;
-}
