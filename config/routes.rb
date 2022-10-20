@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/about_us', to: 'home#about_us'
   get '/history', to: 'home#history'
-  get '/staff', to: 'home#staff'
   get '/contacts', to: 'home#contacts'
-  get '/catalog', to: 'home#catalog'
+
+  resources :products, only: :index, path: :catalog, as: :catalog
+  resources :products, only: :show
+
+  resources :staff_members, only: :index, path: :staff, as: :staff
 end

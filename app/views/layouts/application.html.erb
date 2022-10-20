@@ -33,7 +33,7 @@
 <table border="0" width="1200" cellpadding="5" cellpadding="0" align="center" bgcolor="#ECECEC" >
   <tr>
     <td align="center"><%= link_to 'Главная', root_path %></td>
-    <td align="center"><%= link_to 'Каталог', catalog_path %></td>
+    <td align="center"><%= link_to 'Каталог', catalog_index_path %></td>
     <td align="center"><%= link_to 'Контакты', contacts_path %></td>
   </tr>
 </table>
@@ -43,7 +43,7 @@
     <td width="150" cellpadding="5" valign="top" align="center" bgcolor=white>
       <div class="mb-4"><%= link_to 'О нас', about_us_path %><BR></div>
       <div class="mb-4"><%= link_to 'История фирмы', history_path %><BR></div>
-      <div class="mb-4"><%= link_to 'Сотрудники', staff_path %><BR></div>
+      <div class="mb-4"><%= link_to 'Сотрудники', staff_index_path %><BR></div>
     </td>
     <td>
       <%= yield %>
