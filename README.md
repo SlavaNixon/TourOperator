@@ -9,8 +9,8 @@
 Это [сайт](https://tours-operator.herokuapp.com/ "click"), который является макетом для сайта туроператора.
 
 ## Getting Started <a name = "getting_started"></a>
-Попробывать сайт можно [тут](https://tours-operator.herokuapp.com/ "click").
-To start using the application (run a local server) you need: MySQL, Ruby on Rails 6.1.3, Ruby 3.1.2, Bundler.
+Попробовать сайт можно [тут](https://tours-operator.herokuapp.com/ "click").
+Для локального запуска понадобится: MySQL, Ruby on Rails 6.1.3, Ruby 3.1.2, Bundler.
 #### Windows
 You can get all the necessary tools by downloading [RubyInstaller](https://rubyinstaller.org/ "RubyInstaller").
 #### Linux
