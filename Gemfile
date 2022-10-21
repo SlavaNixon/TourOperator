@@ -11,7 +11,9 @@ end
 group :production do
   # Database for Active Record
   gem 'pg'
-  gem 'net-smtp'
+  gem 'net-smtp', require: false
+  gem 'net-imap', require: false
+  gem 'net-pop', require: false
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
