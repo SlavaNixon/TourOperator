@@ -1,12 +1,12 @@
 <H2 align="left">Каталог</H2>
 <div class="container">
     <div class="row">
-      <% @product.each do |prod| %>
+      <% @product.each do |product| %>
         <div class="col-6">
-          <%= image_tag prod.product_images.find_by(title: "Title").image, align:"left", class:"mb-3 w-50" %>
+          <%= image_tag product.product_images.find_by(title: "Title").image, align:"left", class:"mb-3 w-50" %>
           <div>
-              <%= link_to prod.name, product_path(prod.id) %>
-              <div class="mt-3">Цена поездки: <%= prod.price %> ₽</div>
+              <%= link_to product.name, product_path(product.id) %>
+              <div class="mt-3">Цена поездки: <%= product.price.round %> ₽</div>
           </div>
         </div>
       <% end %>
