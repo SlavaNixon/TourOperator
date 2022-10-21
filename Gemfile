@@ -11,6 +11,7 @@ end
 group :production do
   # Database for Active Record
   gem 'pg'
+  gem 'net-smtp'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
