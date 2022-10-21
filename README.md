@@ -1,24 +1,44 @@
-# README
+# Tour Operator website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
 
-Things you may want to cover:
+- [About](#about)
+- [Getting Started](#getting_started)
 
-* Ruby version
+## About <a name = "about"></a>
+Это [сайт](https://tours-operator.herokuapp.com/ "click"), который является макетом для сайта туроператора.
 
-* System dependencies
+## Getting Started <a name = "getting_started"></a>
+The active version of the site where you can try to shorten links is [here](http://search-meetings.herokuapp.com/ "here").
+To start using the application (run a local server) you need: MySQL, Ruby on Rails 6.1.3, Ruby 3.1.2, Bundler.
+#### Windows
+You can get all the necessary tools by downloading [RubyInstaller](https://rubyinstaller.org/ "RubyInstaller").
+#### Linux
+Good instruction is [here](https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm "here").
 
-* Configuration
+### Installing
 
-* Database creation
+Use `git clone` in command line being in desired directory.
 
-* Database initialization
+```
+$ git clone https://github.com/SlavaNixon/TourOperator .
+```
 
-* How to run the test suite
+After clone start `bundle`.
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle
+```
 
-* Deployment instructions
+After use this command for database migrations
+```
+$ cp .env.example .env && bundle exec rails db:migrate
+```
 
-* ...
+After installing gems you can start local server.
+
+```
+$ bundle exec rails s
+```
+
+Now you can open any browser and go to `http://127.0.0.1:3000` to use service.
