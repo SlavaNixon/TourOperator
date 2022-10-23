@@ -7,24 +7,17 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
 </head>
 <body class="back">
-
+<div class="cont">
 <table border="0" width="1200" cellpadding="0" cellspacing="0" align="center" bgcolor="#CACACA">
   <tr>
-    <td width="150" align="center"><%= image_tag "img/logo.png" %></td>
+    <td width="150" align="center"><%= image_tag "img/logo.png", class: "mb-2" %></td>
     <td align="center"><H1>Золотая Середина</H1></td>
-    <td width="200">
+    <td width="270">
       <table  cellpadding="5"  width="100%">
-        <tr>
-          <td width="40%" align="right">логин: </td>
-          <td align="right"><input type="text" value="логин"></td>
-        </tr>
-        <tr>
-          <td width="40%" align="right">пароль: </td>
-          <td align="right"><input type="password" value="логин"></td>
-        </tr>
-        <tr>
-          <td align="right"><input class="btn btn-light" type="submit" value="войти"></td>
-        </tr>
+        <%= form_with url: "/search" do |form| %>
+          <%= form.text_field :name, class: "my-2 form-control w-95", placeholder: "Введите название тура" %>
+          <%= form.submit "Найти тур", class: "btn btn-light w-95" %>
+        <% end %>
       </table>
     </td>
   </tr>
@@ -49,7 +42,7 @@
       <%= yield %>
     </td>
 </table>
-
+</div>
 <hr/>
 <p align="center">
   © <%= Time.now.year %> — Все права защищены

@@ -73,6 +73,7 @@ GEM
       railties (>= 3.2)
     erubi (1.11.0)
     ffi (1.15.5)
+    fuzzy_match (2.1.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -187,6 +188,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   dotenv-rails
+  fuzzy_match
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2 (~> 0.5)

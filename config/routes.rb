@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/history', to: 'home#history'
   get '/contacts', to: 'home#contacts'
 
+  post '/search', to: "products#search"
+
   resources :products, only: :index, path: :catalog, as: :catalog
   resources :products, only: :show
 
