@@ -6,6 +6,9 @@
     color: darkred;
     text-decoration: underline;
 }
+.videl-red-no-underline {
+    color: darkred;
+}
 
 .videl-blue {
     color: blue;
