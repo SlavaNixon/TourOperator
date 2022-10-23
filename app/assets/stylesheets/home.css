@@ -2,10 +2,12 @@
     float: right;
     color: red;
 }
+
 .videl-red {
     color: darkred;
     text-decoration: underline;
 }
+
 .videl-red-no-underline {
     color: darkred;
 }
@@ -20,12 +22,19 @@
     flex-direction: column;
 }
 
-.back{
+.back {
     background-color: #f8f8f8;
 }
-.cont{
+
+.cont {
     min-height: calc(100vh - 80px);
 }
-.w-95{
+
+.w-95 {
     width: 95%;
+}
+
+.ht {
+    height: 100%;
+    padding: 0%;
 }
